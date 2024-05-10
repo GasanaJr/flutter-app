@@ -15,23 +15,23 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Rise Farmer'),
-          backgroundColor: Colors.tealAccent,
+          title: Text(
+            'Rise Farmer',
+            style: TextStyle(color: Colors.white),
+          ),
+          backgroundColor: Colors.teal,
         ),
-        body: Text(
-          'Let us see how far we can go.',
-          style: TextStyle(fontSize: 20),
+        body: Center(
+          child: Text(
+            'Welcome to Rise Farmer',
+            style: TextStyle(fontSize: 20),
+          ),
         ),
         bottomNavigationBar: BottomNavigationBar(
           items: [
-            BottomNavigationBarItem(
-              label: 'Home',
-              icon: Icon(Icons.home),
-            ),
-            BottomNavigationBarItem(
-              label: 'Settings',
-              icon: Icon(Icons.settings),
-            ),
+            BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Home'),
+            BottomNavigationBarItem(icon: Icon(Icons.settings), label: 'Settings'),
+
           ],
         ),
       ),
